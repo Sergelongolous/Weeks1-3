@@ -21,7 +21,7 @@ public class Mover : MonoBehaviour
     {
 
         Vector3 moverXPos = transform.position;
-        moverXPos.x = moverXPos.x + speed;
+        moverXPos.x += speed * Time.deltaTime;
         transform.position = moverXPos;
 
         //set xMax to wherever is too far to the right for the player to see
